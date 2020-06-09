@@ -14,7 +14,7 @@ describe('Create a note; ', () => {
         .send({title:"Test Note", content:"Test string for note", fav: true})
         .end( function(err,res){
             console.log(res.body)
-            expect(res).to.have.status(200);
+            expect(res).to.have.status(201);
             done();
         });
     });
@@ -26,9 +26,9 @@ describe('Create a note with error', () => {
     it('Should receive an error', (done) => {
         chai.request(url)
             .post('/new')
-            .send({title: "Failed Note", content: "This note never will be inserted", fav: false })
+            .send({ content: "This note never will be inserted", fav: false })
             .end (function (err,res){
-                console,log(res.body)
+                console.log(res.body)
                 expect(res).to.have.status(500);
                 done();
             });
