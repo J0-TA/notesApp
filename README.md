@@ -5,8 +5,15 @@
 1. Clone the repository.
 2. Open server folder: ``` $ cd server ```
 3. Install dependencies: ``` $ npm install ```
-4. Run seeds.js to get some notes: ``` $ node bin/seeds.js ```
-5. Run server: ``` $ npm run dev ```
+4. Create .env with the next config: 
+
+``` 
+PORT=3000
+ENV=development
+```
+
+5. Run seeds.js to get some notes: ``` $ node bin/seeds.js ```
+6. Run server: ``` $ npm run dev ```
 
 ### Endpoints
 
@@ -43,4 +50,4 @@ Run tests: ```$ npm test ```
 
 · Mocha
 
-· Chai % Chai-HTTP
+· Chai & Chai-HTTP
