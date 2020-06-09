@@ -3,15 +3,19 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "test": "mocha",
     "start": "node ./bin/www",
     "dev": "DEBUG=server:* nodemon ./bin/www",
     "dev-windows": "nodemon ./bin/www"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "cookie-parser": "^1.4.3",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
+    "mocha": "^7.2.0",
     "mongoose": "^5.2.10",
     "morgan": "^1.9.0"
   },

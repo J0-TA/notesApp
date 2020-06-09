@@ -29,6 +29,10 @@ Create note json format:
 |POST|/new|Create new note|
 |PUT|/:id|Update favorite state|
 
+## Testing
+
+Run tests: ```$ npm test ```
+
 ## Built With
 
 · Express
@@ -36,3 +40,7 @@ Create note json format:
 · MongoDB
 
 · Mongoose
+
+· Mocha
+
+· Chai % Chai-HTTP
